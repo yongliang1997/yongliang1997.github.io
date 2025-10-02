@@ -13,34 +13,29 @@
     <style>
       .one {
         position: relative;
-        width: 100%;
-        overflow: hidden;
+        display: inline-block; /* shrink-wraps to the natural size of its contents */
       }
       
-      /* image stays natural size but defines the container height */
       .one > img {
-        display: block;
-        width: 100%;
-        height: auto;
+        display: block;        /* remove inline gaps */
+        max-width: 100%;       /* still responsive if container is smaller */
+        height: auto;          /* keep natural ratio */
       }
       
-      /* overlay box matches the image area */
       .two {
         position: absolute;
         inset: 0;
         opacity: 0;
         transition: opacity .25s ease-in-out;
         pointer-events: none;
-        display: flex;              /* enable centering */
-        align-items: center;        /* vertical center */
-        justify-content: center;    /* horizontal center */
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       
-      /* video is centered within the overlay */
       .two video {
         max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;   /* no cropping */
+        height: auto;          /* let video use its own natural height */
         background: transparent;
         display: block;
       }
@@ -50,7 +45,6 @@
       }
       
       table { border-collapse: separate; }
-
 
     </style>
 
