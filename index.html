@@ -2,510 +2,334 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <title>Yongliang Wang</title>
 
     <meta name="author" content="Yongliang Wang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
+
+    <!-- Minimal CSS to handle all hover reveals -->
+    <style>
+      .one { position: relative; }
+      .one > img { display: block; width: 100%; height: auto; }
+      .two {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: opacity .25s ease-in-out;
+        pointer-events: none; /* let hover be controlled by the parent */
+      }
+      .one:hover .two { opacity: 1; }
+      .two video { width: 100%; height: 100%; object-fit: cover; display: block; }
+      table { border-collapse: separate; }
+    </style>
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
+    <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
+      <tr>
+        <td style="padding:0">
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
+            <tr>
               <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Yongliang Wang
-                </p>
-                <p style="text-align: justify;">I am a PhD student at <a href="https://www.ai.rug.nl/irl-lab/">Interactive Robot Learning Laboratory</a>, <a href="https://www.rug.nl/">University of Groningen</a> working under the supervision of <a href="https://www.ai.rug.nl/irl-lab/">Prof. Hamidreza Kasaei</a>. My research is dedicated to developing algorithms that empower intelligent systems to learn through their interactions with the physical environment. The goal is to enable these systems to independently develop the perceptual and manipulative abilities required to perform intricate tasks and provide assistance to humans.
+                <p class="name" style="text-align:center;">Yongliang Wang</p>
+                <p style="text-align: justify;">
+                  I am a PhD student at <a href="https://www.ai.rug.nl/irl-lab/">Interactive Robot Learning Laboratory</a>, <a href="https://www.rug.nl/">University of Groningen</a> working under the supervision of <a href="https://www.ai.rug.nl/irl-lab/">Prof. Hamidreza Kasaei</a>. My research is dedicated to developing algorithms that empower intelligent systems to learn through their interactions with the physical environment. The goal is to enable these systems to independently develop the perceptual and manipulative abilities required to perform intricate tasks and provide assistance to humans.
                 </p>
                 <p style="text-align: justify;">
-                 Before coming to Groningen, I received my M.Eng. in Control Engineering from State Key Laboratory of Robotics, <a href="https://english.ucas.ac.cn/">University of Chinese Academy of Sciences</a>. I obtained my Bachelor of Engineering in Automation from Harbin University of Science and Technology.
+                  Before coming to Groningen, I received my M.Eng. in Control Engineering from State Key Laboratory of Robotics, <a href="https://english.ucas.ac.cn/">University of Chinese Academy of Sciences</a>. I obtained my Bachelor of Engineering in Automation from Harbin University of Science and Technology.
                 </p>
-                <!-- During my master, I was fortunate to work with <a href="https://people.ucas.edu.cn/~siawangting1">Ting Wang</a>.  Throughout my undergraduate studies, I had the privilege of collaborating with <a href="https://ieeexplore.ieee.org/author/37599200700">Ling Huang</a>.-->
                 <p style="text-align:center">
                   <a href="mailto:wangyongliang1997@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp; -->
-                  <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
                   <a href="https://scholar.google.com.hk/citations?user=iqJFvXkAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/yongliang-wang-5b92b6260/">LinkedIn</a> &nbsp;/&nbsp;
-				  <!-- <a href="https://www.threads.net/@jonbarron">Threads</a> &nbsp;/&nbsp; -->
-				  <!-- <a href="https://bsky.app/profile/jonbarron.bsky.social">Bluesky</a> &nbsp;/&nbsp; -->
-                  <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp; -->
                   <a href="https://github.com/wyl1253">Github</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/Yongliang_Wang.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/Yongliang_Wang.jpg" class="hoverZoomLink"></a>
+                <a href="images/Yongliang_Wang.jpg">
+                  <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/Yongliang_Wang.jpg" class="hoverZoomLink">
+                </a>
               </td>
             </tr>
           </tbody></table>
 
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
+            <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Updates</h2>
-                <p>
-                  <ul style="list-style-type:square; margin:0; padding:0 0 0 20px;"> <!-- Adjust padding and list-style-type as needed -->
-                    <li>
-                      <span style="font-weight:bold;">Sep 2025:</span> One paper is accepted by <strong>Engineering Applications of Artificial Intelligence</strong>!
-                    </li>
-                    <li>
-                      <span style="font-weight:bold;">March 2025:</span> One paper is accepted by <strong>IEEE Robotics and Automation Letters (RAL)</strong>!
-                    </li>
-                    <!-- Add more list items here -->
-                    <li>
-                      <span style="font-weight:bold;">Jan 2025:</span> One paper is accepted by <strong>ICRA 2025</strong>!
-                    </li>
-                    <li>
-                      <span style="font-weight:bold;">June 2024:</span> One review is accepted by <strong>Cyborg and Bionic Systems</strong>!
-                    </li>
-                    <li>
-                      <span style="font-weight:bold;">Jan 2024:</span> One paper is accepted by <strong>ICRA 2024</strong>!
-                    </li>
-                  </ul>
-                </p>
+                <ul style="list-style-type:square; margin:0; padding:0 0 0 20px;">
+                  <li><span style="font-weight:bold;">Sep 2025:</span> One paper is accepted by <strong>Engineering Applications of Artificial Intelligence</strong>!</li>
+                  <li><span style="font-weight:bold;">March 2025:</span> One paper is accepted by <strong>IEEE Robotics and Automation Letters (RAL)</strong>!</li>
+                  <li><span style="font-weight:bold;">Jan 2025:</span> One paper is accepted by <strong>ICRA 2025</strong>!</li>
+                  <li><span style="font-weight:bold;">June 2024:</span> One review is accepted by <strong>Cyborg and Bionic Systems</strong>!</li>
+                  <li><span style="font-weight:bold;">Jan 2024:</span> One paper is accepted by <strong>ICRA 2024</strong>!</li>
+                </ul>
               </td>
             </tr>
           </tbody></table>
 
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
+            <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
-                <p>
-                  *: indicating equal contribution or alphabetic ordering. You can also check my  <a href="https://scholar.google.com.hk/citations?user=iqJFvXkAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a> profile.
-                </p>
+                <p>*: indicating equal contribution or alphabetic ordering. You can also check my <a href="https://scholar.google.com.hk/citations?user=iqJFvXkAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a> profile.</p>
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-    <!-- FTP -->
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
 
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
-          <source src="images/ftp.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/ftp.jpeg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function smerf_start() {
-            document.getElementById('smerf_image').style.opacity = "1";
-          }
+            <!-- FTP -->
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two">
+                    <video muted autoplay loop playsinline>
+                      <source src="images/ftp.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/ftp.jpeg" alt="FTP project cover">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://sites.google.com/view/ftp4rm/home">
+                  <span class="papertitle">Fast Trajectory Planner with a Reinforcement Learning-based Controller for Robotic Manipulators</span>
+                </a>
+                <br>
+                <strong>Yongliang Wang</strong>,
+                <a href="https://www.ai.rug.nl/irl-lab/">Hamidreza Kasaei</a>
+                <br>
+                <em>Engineering Applications of Artificial Intelligence</em>, 2025
+                <br>
+                <a href="https://sites.google.com/view/ftp4rm/home">project page</a>
+                /
+                <a href="https://youtu.be/CYy2uPSYics">video</a>
+                /
+                <a href="https://arxiv.org/pdf/2509.17381v1">arXiv</a>
+                <p style="text-align: justify; margin-top: 8px;">
+                  We propose a fast trajectory planning system for manipulators that combines vision-based path planning in task space with reinforcement learning-based obstacle avoidance in joint space.
+                </p>
+              </td>
+            </tr>
 
-          function smerf_stop() {
-            document.getElementById('smerf_image').style.opacity = "0";
-          }
-          smerf_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://sites.google.com/view/ftp4rm/home">
-          <span class="papertitle">Fast Trajectory Planner with a Reinforcement Learning-based Controller for Robotic Manipulators</span>
-        </a>
-        <br>
-		<strong>Yongliang Wang</strong>,
-    <a href="https://www.ai.rug.nl/irl-lab/">Hamidreza Kasaei</a>
-		    <br>
-        <em>Engineering Applications of Artificial Intelligence</em>, 2025
-        <br>
-        <a href="https://sites.google.com/view/ftp4rm/home">project page</a>
-        /
-        <a href="https://youtu.be/CYy2uPSYics">video</a>
-        /
-        <a href="https://arxiv.org/pdf/2509.17381v1">arXiv</a>
-        <p></p>
-        <p style="text-align: justify;">
-        We propose a fast trajectory planning system for manipulators that combines vision-based path planning in task space with reinforcement learning-based obstacle avoidance in joint space.
-        </p>
-      </td>
-    </tr>
+            <!-- DPG -->
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two">
+                    <video muted autoplay loop playsinline>
+                      <source src="images/dpg.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/dpg.jpeg" alt="DPG project cover">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://sites.google.com/view/pg4da/home">
+                  <span class="papertitle">Learning Dual-Arm Push and Grasp Synergy in Dense Clutter</span>
+                </a>
+                <br>
+                <strong>Yongliang Wang</strong>,
+                <a href="https://www.ai.rug.nl/irl-lab/">Hamidreza Kasaei</a>
+                <br>
+                <em>IEEE Robotics and Automation Letters</em>, 2025
+                <br>
+                <a href="https://sites.google.com/view/pg4da/home">project page</a>
+                /
+                <a href="https://youtu.be/l5gZluRaouU">video</a>
+                /
+                <a href="https://arxiv.org/pdf/2412.04052">arXiv</a>
+                <p style="text-align: justify; margin-top: 8px;">
+                  We propose a model-free deep reinforcement learning (DRL) framework to enable dual-arm coordination for grasping large flat objects.
+                </p>
+              </td>
+            </tr>
 
-    <!-- DPG -->
+            <!-- GL -->
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two">
+                    <video muted autoplay loop playsinline>
+                      <source src="images/gl.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/gl.png" alt="GL project cover">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://sites.google.com/view/grasplargeflat">
+                  <span class="papertitle">Learning Dual-Arm Coordination for Grasping Large Flat Objects</span>
+                </a>
+                <br>
+                <strong>Yongliang Wang</strong>,
+                <a href="https://www.ai.rug.nl/irl-lab/">Hamidreza Kasaei</a>
+                <br>
+                <em>ICRA</em>, 2025
+                <br>
+                <a href="https://sites.google.com/view/grasplargeflat">project page</a>
+                /
+                <a href="https://www.youtube.com/watch?v=a3JVDKRP9Kc">video</a>
+                /
+                <a href="https://arxiv.org/abs/2504.03500">arXiv</a>
+                <p style="text-align: justify; margin-top: 8px;">
+                  We propose a model-free deep reinforcement learning (DRL) framework to enable dual-arm coordination for grasping large flat objects.
+                </p>
+              </td>
+            </tr>
 
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='smerf_image1'><video  width=100% muted autoplay loop>
-          <source src="images/dpg.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/dpg.jpeg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function smerf_start() {
-            document.getElementById('smerf_image1').style.opacity = "1";
-          }
+            <!-- First -->
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two">
+                    <video muted autoplay loop playsinline>
+                      <source src="images/push_grasp_icra24.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/push_grasp_icra24.png" alt="ICRA24 project cover">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://sites.google.com/view/pushandgrasp/home">
+                  <span class="papertitle">Self-supervised Learning for Joint Pushing and Grasping Policies in Highly Cluttered Environments</span>
+                </a>
+                <br>
+                <strong>Yongliang Wang*</strong>,
+                Kamal Mokhtar*,
+                Cock Heemskerk,
+                <a href="https://www.ai.rug.nl/irl-lab/">Hamidreza Kasaei</a>
+                <br>
+                <em>ICRA</em>, 2024
+                <br>
+                <a href="https://sites.google.com/view/pushandgrasp/home">project page</a>
+                /
+                <a href="https://www.youtube.com/watch?v=STqsz5V-4no">video</a>
+                /
+                <a href="https://arxiv.org/abs/2203.02511">arXiv</a>
+                <p style="text-align: justify; margin-top: 8px;">
+                  We propose a Deep Reinforcement Learning (DRL) method that develops joint policies for grasping and pushing, enabling effective manipulation of target objects within untrained, densely cluttered environments.
+                </p>
+              </td>
+            </tr>
 
-          function smerf_stop() {
-            document.getElementById('smerf_image1').style.opacity = "0";
-          }
-          smerf_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://sites.google.com/view/pg4da/home">
-          <span class="papertitle">Learning Dual-Arm Push and Grasp Synergy in Dense Clutter</span>
-        </a>
-        <br>
-		<strong>Yongliang Wang</strong>,
-    <a href="https://www.ai.rug.nl/irl-lab/">Hamidreza Kasaei</a>
-		    <br>
-        <em>IEEE Robotics and Automation Letters</em>, 2025
-        <br>
-        <a href="https://sites.google.com/view/pg4da/home">project page</a>
-        /
-        <a href="https://youtu.be/l5gZluRaouU">video</a>
-        /
-        <a href="https://arxiv.org/pdf/2412.04052">arXiv</a>
-        <p></p>
-        <p style="text-align: justify;">
-        We propose a model-free deep reinforcement learning (DRL) framework to enable dual-arm coordination for grasping large flat objects.
-        </p>
-      </td>
-    </tr>
-	
-    <!-- -------- -->
+            <!-- Second (image only) -->
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <img src="images/fine_grained.png" alt="Fine Grained paper cover">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.worldscientific.com/doi/pdf/10.1142/S0219519421400200">
+                  <span class="papertitle">Fine-Grained and Multi-Scale Motif Features for Cross-Subject Mental Workload Assessment Using Bi-LSTM</span>
+                </a>
+                <br>
+                Shiliang Shao,
+                Ting Wang,
+                Chunhe Song,
+                Yun Su,
+                <strong>Yongliang Wang</strong>,
+                Chen Yao.
+                <br>
+                <em>Journal of Mechanics in Medicine and Biology</em>, 2021
+                <br>
+                <a href="https://www.worldscientific.com/doi/pdf/10.1142/S0219519421400200">paper</a>
+              </td>
+            </tr>
 
+            <!-- Third (image only) -->
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <img src="images/hrv.png" alt="HRV paper cover">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.mdpi.com/2079-9292/9/12/2174">
+                  <span class="papertitle">Research of HRV as a measure of mental workload in human and dual-arm robot interaction</span>
+                </a>
+                <br>
+                Shiliang Shao,
+                Ting Wang,
+                <strong>Yongliang Wang</strong>,
+                Yun Su,
+                Chunhe Song,
+                Chen Yao.
+                <br>
+                <em>Electronics</em>, 2020
+                <br>
+                <a href="https://www.mdpi.com/2079-9292/9/12/2174">paper</a>
+              </td>
+            </tr>
 
+            <!-- Fourth (image only) -->
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <img src="images/grey_wolf.png" alt="Grey Wolf paper cover">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1682/1/012020/pdf">
+                  <span class="papertitle">An Improved Grey-Wolf Optimization Algorithm Based on Circle Map</span>
+                </a>
+                <br>
+                <strong>Yongliang Wang</strong>,
+                Ting Wang,
+                Shuxian Dong,
+                Chen Yao.
+                <br>
+                <em>International Conference on Machine Learning and Computer Application</em>, 2020
+                <br>
+                <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1682/1/012020/pdf">paper</a>
+              </td>
+            </tr>
 
-    <!-- GL -->
+            <!-- Fifth (image only) -->
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <img src="images/whale.png" alt="Whale Optimization paper cover">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1682/1/012055/pdf">
+                  <span class="papertitle">Improved Whale Optimization Algorithm Based on the Tent Chaotic Mapping and Nonlinear Convergence Factor</span>
+                </a>
+                <br>
+                Shuxian Dong,
+                Chunguang Bu,
+                <strong>Yongliang Wang</strong>,
+                <br>
+                <em>International Conference on Machine Learning and Computer Application</em>, 2020
+                <br>
+                <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1682/1/012055/pdf">paper</a>
+              </td>
+            </tr>
 
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='smerf_image2'><video  width=100% muted autoplay loop>
-          <source src="images/gl.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/gl.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function smerf_start() {
-            document.getElementById('smerf_image2').style.opacity = "1";
-          }
+          </tbody></table>
 
-          function smerf_stop() {
-            document.getElementById('smerf_image2').style.opacity = "0";
-          }
-          smerf_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://sites.google.com/view/grasplargeflat">
-          <span class="papertitle">Learning Dual-Arm Coordination for Grasping Large Flat Objects</span>
-        </a>
-        <br>
-		<strong>Yongliang Wang</strong>,
-    <a href="https://www.ai.rug.nl/irl-lab/">Hamidreza Kasaei</a>
-		    <br>
-        <em>ICRA</em>, 2025
-        <br>
-        <a href="https://sites.google.com/view/grasplargeflat">project page</a>
-        /
-        <a href="https://www.youtube.com/watch?v=a3JVDKRP9Kc">video</a>
-        /
-        <a href="https://arxiv.org/abs/2504.03500">arXiv</a>
-        <p></p>
-        <p style="text-align: justify;">
-        We propose a model-free deep reinforcement learning (DRL) framework to enable dual-arm coordination for grasping large flat objects. 
-        </p>
-      </td>
-    </tr>
-	
-    <!-- -------- -->
-
-
-
-
-    <!-- First -->
-
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='smerf_image3'><video  width=100% muted autoplay loop>
-          <source src="images/push_grasp_icra24.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/push_grasp_icra24.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function smerf_start() {
-            document.getElementById('smerf_image3').style.opacity = "1";
-          }
-
-          function smerf_stop() {
-            document.getElementById('smerf_image3').style.opacity = "0";
-          }
-          smerf_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://sites.google.com/view/pushandgrasp/home">
-          <span class="papertitle">Self-supervised Learning for Joint Pushing and Grasping Policies in Highly Cluttered Environments</span>
-        </a>
-        <br>
-		<strong>Yongliang Wang*</strong>,
-		Kamal Mokhtar*,
-		Cock Heemskerk,
-    <a href="https://www.ai.rug.nl/irl-lab/">Hamidreza Kasaei</a>
-		    <br>
-        <em>ICRA</em>, 2024
-        <br>
-        <a href="https://sites.google.com/view/pushandgrasp/home">project page</a>
-        /
-        <a href="https://www.youtube.com/watch?v=STqsz5V-4no">video</a>
-        /
-        <a href="https://arxiv.org/abs/2203.02511">arXiv</a>
-        <p></p>
-        <p style="text-align: justify;">
-        We propose a Deep Reinforcement Learning (DRL) method that develops joint policies for grasping and pushing, enabling effective manipulation of target objects within untrained, densely cluttered environments.
-        </p>
-      </td>
-    </tr>
-	
-    <!-- -------- -->
-
-
-    <!-- Second -->
-
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <!-- <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
-          <source src="images/smerf.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='images/fine_grained.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function smerf_start() {
-            document.getElementById('smerf_image').style.opacity = "1";
-          }
-
-          function smerf_stop() {
-            document.getElementById('smerf_image').style.opacity = "0";
-          }
-          smerf_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://www.worldscientific.com/doi/pdf/10.1142/S0219519421400200">
-          <span class="papertitle">Fine-Grained and Multi-Scale Motif Features for Cross-Subject Mental Workload Assessment Using Bi-LSTM</span>
-        </a>
-        <br>
-
-    Shiliang Shao, 
-    Ting Wang, 
-    Chunhe Song, 
-    Yun Su, 
-    <strong>Yongliang Wang</strong>,
-    Chen  Yao.
-
-        <br>
-        <em>Journal of Mechanics in Medicine and Biology</em>, 2021
-        <br>
-<!--         <a href="https://sites.google.com/view/pushandgrasp/home">project page</a> -->
-        <!-- / -->
-<!--         <a href="https://www.youtube.com/watch?v=STqsz5V-4no">video</a> -->
-        <!-- / -->
-        <a href="https://www.worldscientific.com/doi/pdf/10.1142/S0219519421400200">paper</a>
-        <p></p>
-<!--         <p style="text-align: justify;">
-        We propose a Deep Reinforcement Learning (DRL) method that develops joint policies for grasping and pushing, enabling effective manipulation of target objects within untrained, densely cluttered environments.
-        </p> -->
-      </td>
-    </tr>
-  
-    <!-- -------- -->
-
-
-   <!-- Third -->
-
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <!-- <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
-          <source src="images/smerf.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='images/hrv.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function smerf_start() {
-            document.getElementById('smerf_image').style.opacity = "1";
-          }
-
-          function smerf_stop() {
-            document.getElementById('smerf_image').style.opacity = "0";
-          }
-          smerf_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://www.mdpi.com/2079-9292/9/12/2174">
-          <span class="papertitle">Research of HRV as a measure of mental workload in human and dual-arm robot interaction</span>
-        </a>
-        <br>
-
-    Shiliang Shao,
-    Ting Wang, 
-    <strong>Yongliang Wang</strong>,
-    Yun Su, 
-    Chunhe Song, 
-    Chen  Yao.
-
-        <br>
-        <em>Electronics</em>, 2020
-        <br>
-<!--         <a href="https://sites.google.com/view/pushandgrasp/home">project page</a> -->
-        <!-- / -->
-<!--         <a href="https://www.youtube.com/watch?v=STqsz5V-4no">video</a> -->
-        <!-- / -->
-        <a href="https://www.mdpi.com/2079-9292/9/12/2174">paper</a>
-        <p></p>
-<!--         <p style="text-align: justify;">
-        We propose a Deep Reinforcement Learning (DRL) method that develops joint policies for grasping and pushing, enabling effective manipulation of target objects within untrained, densely cluttered environments.
-        </p> -->
-      </td>
-    </tr>
-  
-    <!-- -------- -->
-
-
-
-
-
-    <!-- Fourth -->
-
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-<!--           <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
-          <source src="images/smerf.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='images/grey_wolf.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function smerf_start() {
-            document.getElementById('smerf_image').style.opacity = "1";
-          }
-
-          function smerf_stop() {
-            document.getElementById('smerf_image').style.opacity = "0";
-          }
-          smerf_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1682/1/012020/pdf">
-          <span class="papertitle">An Improved Grey-Wolf Optimization Algorithm Based on Circle Map</span>
-        </a>
-        <br>
-    <strong>Yongliang Wang</strong>,
-    Ting Wang, 
-    Shuxian Dong, 
-    Chen Yao.
-        <br>
-        <em>International Conference on Machine Learning and Computer Application</em>, 2020
-        <br>
-<!--         <a href="https://sites.google.com/view/pushandgrasp/home">project page</a> -->
-        <!-- / -->
-<!--         <a href="https://www.youtube.com/watch?v=STqsz5V-4no">video</a> -->
-        <!-- / -->
-        <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1682/1/012020/pdf">paper</a>
-        <p></p>
-<!--         <p style="text-align: justify;">
-        We propose a Deep Reinforcement Learning (DRL) method that develops joint policies for grasping and pushing, enabling effective manipulation of target objects within untrained, densely cluttered environments.
-        </p> -->
-      </td>
-    </tr>
-  
-    <!-- -------- -->
-
-
-    <!-- Fifth -->
-
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-         <!--  <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
-          <source src="images/smerf.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='images/whale.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function smerf_start() {
-            document.getElementById('smerf_image').style.opacity = "1";
-          }
-
-          function smerf_stop() {
-            document.getElementById('smerf_image').style.opacity = "0";
-          }
-          smerf_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1682/1/012055/pdf">
-          <span class="papertitle">Improved Whale Optimization Algorithm Based on the Tent Chaotic Mapping and Nonlinear Convergence Factor</span>
-        </a>
-        <br>
-    Shuxian Dong, 
-    Chunguang Bu,
-    <strong>Yongliang Wang</strong>,
-        <br>
-        <em>International Conference on Machine Learning and Computer Application</em>, 2020
-        <br>
-<!--         <a href="https://sites.google.com/view/pushandgrasp/home">project page</a> -->
-        <!-- / -->
-<!--         <a href="https://www.youtube.com/watch?v=STqsz5V-4no">video</a> -->
-        <!-- / -->
-        <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1682/1/012055/pdf">paper</a>
-        <p></p>
-<!--         <p style="text-align: justify;">
-        We propose a Deep Reinforcement Learning (DRL) method that develops joint policies for grasping and pushing, enabling effective manipulation of target objects within untrained, densely cluttered environments.
-        </p> -->
-      </td>
-    </tr>
-  
-    <!-- -------- -->
-
-
-         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
+            <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Service</h2>
-                <p>
-                  <ul style="list-style-type:square; margin:0; padding:0 0 0 20px;"> <!-- Adjust padding and list-style-type as needed -->
-                    <li>
-                      <span style="font-weight:bold;">Journal Reviewer</span>, Engineering Applications of Artificial Intelligence, IEEE Robotics and Automation Letters
-                    </li>
-                    <li>
-                      <span style="font-weight:bold;">Conference Reviewer</span>, ICRA
-                    </li>
-                    <!-- Add more list items here -->
-                  </ul>
-                </p>
+                <ul style="list-style-type:square; margin:0; padding:0 0 0 20px;">
+                  <li><span style="font-weight:bold;">Journal Reviewer</span>, Engineering Applications of Artificial Intelligence, IEEE Robotics and Automation Letters</li>
+                  <li><span style="font-weight:bold;">Conference Reviewer</span>, ICRA</li>
+                </ul>
               </td>
             </tr>
           </tbody></table>
-
 
         </td>
       </tr>
-    </table>
+    </tbody></table>
   </body>
 </html>
