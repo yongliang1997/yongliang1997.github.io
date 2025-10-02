@@ -14,31 +14,36 @@
       .one {
         position: relative;
         width: 100%;
-        aspect-ratio: 16 / 9;   /* choose the tile shape you want */
+        aspect-ratio: 16 / 9;
         overflow: hidden;
         line-height: 0;
       }
       
-      /* Make BOTH layers use the SAME rules */
+      /* both layers share the same box & centering */
       .one > img,
       .two video {
         position: absolute;
         inset: 0;
         width: 100%;
         height: 100%;
-        object-fit: contain;     /* no distortion, no crop */
-        object-position: center; /* centered like your video */
+        object-fit: contain;    /* no distortion, transparent padding if needed */
+        object-position: center;
         display: block;
-        background: transparent; /* transparent letterbox areas */
+        background: transparent;
       }
       
+      /* overlay sits ABOVE the image */
       .two {
         position: absolute;
         inset: 0;
         opacity: 0;
         transition: opacity .25s ease-in-out;
         pointer-events: none;
+        z-index: 2;             /* <-- key line */
       }
+      
+      /* (optional) make the image explicitly below */
+      .one > img { z-index: 1; }
       
       .one:hover .two { opacity: 1; }
 
