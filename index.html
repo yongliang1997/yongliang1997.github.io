@@ -13,13 +13,23 @@
     <style>
       .one {
         position: relative;
-        display: inline-block; /* shrink-wraps to the natural size of its contents */
+        width: 100%;
+        aspect-ratio: 16 / 9;   /* choose the tile shape you want */
+        overflow: hidden;
+        line-height: 0;
       }
       
-      .one > img {
-        display: block;        /* remove inline gaps */
-        max-width: 100%;       /* still responsive if container is smaller */
-        height: auto;          /* keep natural ratio */
+      /* Make BOTH layers use the SAME rules */
+      .one > img,
+      .two video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;     /* no distortion, no crop */
+        object-position: center; /* centered like your video */
+        display: block;
+        background: transparent; /* transparent letterbox areas */
       }
       
       .two {
@@ -28,23 +38,10 @@
         opacity: 0;
         transition: opacity .25s ease-in-out;
         pointer-events: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
       
-      .two video {
-        max-width: 100%;
-        height: auto;          /* let video use its own natural height */
-        background: transparent;
-        display: block;
-      }
-      
-      .one:hover .two {
-        opacity: 1;
-      }
-      
-      table { border-collapse: separate; }
+      .one:hover .two { opacity: 1; }
+
 
     </style>
 
