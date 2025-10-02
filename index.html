@@ -11,38 +11,50 @@
 
     <!-- Minimal CSS to handle all hover reveals -->
     <style>
+      /* The shared 16:9 box both layers must occupy */
       .one {
         position: relative;
         width: 100%;
-        aspect-ratio: 16 / 9;   /* or whatever ratio fits your media */
+        aspect-ratio: 16 / 9;     /* <- fixed box for BOTH layers */
         overflow: hidden;
         line-height: 0;
       }
-      
-      /* Apply the same rules to both */
-      .one > img,
-      .two video {
+    
+      /* Put the image at z=1 (background), it also obeys the same 16:9 box */
+      .one > img {
         position: absolute;
         inset: 0;
+        z-index: 1;
         width: 100%;
         height: 100%;
-        object-fit: contain;     /* both centered with letterboxing */
-        object-position: center; /* vertical + horizontal centering */
+        object-fit: contain;       /* keep image undistorted */
+        object-position: center;   /* same center point */
         display: block;
-        background: transparent;
+        background: transparent;   /* transparent letterbox if needed */
       }
-      
+    
+      /* The overlay layer is EXACTLY the same size as .one */
       .two {
         position: absolute;
-        inset: 0;
+        inset: 0;                  /* same box as .one/.img */
+        z-index: 2;                /* above the image */
         opacity: 0;
         transition: opacity .25s ease-in-out;
         pointer-events: none;
-        z-index: 2;
       }
-      
+    
+      /* Video fills the same 16:9 box; center it; no distortion */
+      .two video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;       /* show full video; transparent bars if needed */
+        object-position: center;   /* same center point as image */
+        display: block;
+        background: transparent;   /* remove black letterbox */
+      }
+    
+      /* Reveal video on hover */
       .one:hover .two { opacity: 1; }
-
     </style>
 
 
