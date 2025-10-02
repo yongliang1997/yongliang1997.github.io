@@ -11,8 +11,18 @@
 
     <!-- Minimal CSS to handle all hover reveals -->
     <style>
-      .one { position: relative; }
-      .one > img { display: block; width: 100%; height: auto; }
+      .one {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+      }
+      .one img,
+      .two video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;   /* ensures both image and video scale consistently */
+        display: block;
+      }
       .two {
         position: absolute;
         inset: 0;
@@ -20,10 +30,14 @@
         transition: opacity .25s ease-in-out;
         pointer-events: none; /* let hover be controlled by the parent */
       }
-      .one:hover .two { opacity: 1; }
-      .two video { width: 100%; height: 100%; object-fit: cover; display: block; }
-      table { border-collapse: separate; }
+      .one:hover .two {
+        opacity: 1;
+      }
+      table {
+        border-collapse: separate;
+      }
     </style>
+
   </head>
 
   <body>
