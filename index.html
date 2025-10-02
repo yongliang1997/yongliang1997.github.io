@@ -15,35 +15,35 @@
         position: relative;
         width: 100%;
       }
-    
-      /* Keep the image correct (no distortion), it defines the container height */
+      
       .one > img {
         display: block;
         width: 100%;
         height: auto;
       }
-    
-      /* Overlay that exactly matches the image area */
+      
       .two {
         position: absolute;
         inset: 0;
         opacity: 0;
         transition: opacity .25s ease-in-out;
         pointer-events: none;
-        background: #000; /* optional: hides the image in the letterbox area */
       }
-    
-      /* Make the video use the SAME HEIGHT as the image, without cropping */
+      
       .two video {
         width: 100%;
         height: 100%;
-        object-fit: contain;  /* no cropping; adds letterboxing if aspect ratios differ */
+        object-fit: contain;    /* keeps full video visible */
         display: block;
+        background: transparent; /* remove black letterbox, make it transparent */
       }
-    
-      .one:hover .two { opacity: 1; }
-    
+      
+      .one:hover .two {
+        opacity: 1;
+      }
+      
       table { border-collapse: separate; }
+
     </style>
 
 
