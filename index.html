@@ -11,41 +11,39 @@
 
     <!-- Minimal CSS to handle all hover reveals -->
     <style>
-.one {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.one > img {
-  display: block;
-  width: 100%;   /* image defines the box size */
-  height: auto;
-}
-
-.two {
-  position: absolute;
-  inset: 0;      /* overlay matches the image box */
-  z-index: 2;
-  opacity: 0;
-  transition: opacity .25s ease-in-out;
-  pointer-events: none;
-}
-
-.two video {
-  width: 100%;   /* force video to same width as image */
-  height: 100%;  /* force video to same height as image */
-  object-fit: cover;   /* fill box completely */
-  object-position: center;
-  display: block;
-  background: transparent;
-}
-
-.one:hover .two {
-  opacity: 1;
-}
-
+      .one {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;   /* fixed box: both image + video obey this */
+        overflow: hidden;
+        line-height: 0;
+      }
+      
+      /* both image and video follow the same box rules */
+      .one > img,
+      .two video {
+        position: absolute;
+        inset: 0;                /* fills parent .one */
+        width: 100%;
+        height: 100%;
+        object-fit: contain;     /* keep proportions, transparent bars if mismatch */
+        object-position: center; /* same center point */
+        display: block;
+        background: transparent; /* no black letterbox */
+      }
+      
+      .two {
+        position: absolute;
+        inset: 0;
+        z-index: 2;              /* above the image */
+        opacity: 0;
+        transition: opacity .25s ease-in-out;
+        pointer-events: none;
+      }
+      
+      .one:hover .two {
+        opacity: 1;
+      }
 
     </style>
 
