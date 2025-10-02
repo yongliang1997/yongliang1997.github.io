@@ -46,44 +46,40 @@
       } */
 
 
-/* The image defines the size; both layers sit in the same grid cell */
 .one {
-  display: grid;
+  position: relative;
   width: 100%;
-  line-height: 0;       /* remove inline gaps */
-  position: relative;   /* keep your existing positioning if needed */
+  aspect-ratio: 16 / 9;   /* force every block to be 16:9 */
+  overflow: hidden;
+  line-height: 0;
+  display: grid;          /* so children stack neatly */
 }
 
-/* Image = base layer; it sets the height */
-.one > img {
-  grid-area: 1 / 1;     /* same cell as the overlay */
-  width: 100%;
-  height: auto;         /* natural aspect, no distortion */
-  display: block;
-  z-index: 1;
-}
-
-/* Overlay exactly on top of the image */
-.two {
-  grid-area: 1 / 1;     /* identical position/size as the image */
-  display: grid;        /* for centering the video */
-  place-items: center;  /* same center point */
-  opacity: 0;
-  transition: opacity .25s ease-in-out;
-  pointer-events: none;
-  z-index: 2;
-}
-
-/* Video centered, no distortion; fills as much as possible */
+/* Both image and video fill the same 16:9 box */
+.one > img,
 .two video {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;   /* no crop, no stretch */
+  grid-area: 1 / 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;     /* no distortion, adds transparent bars if mismatch */
+  object-position: center;
   background: transparent;
   display: block;
 }
 
-.one:hover .two { opacity: 1; }
+/* Overlay video */
+.two {
+  grid-area: 1 / 1;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  pointer-events: none;
+}
+
+.one:hover .two {
+  opacity: 1;
+}
+
 
       
 
