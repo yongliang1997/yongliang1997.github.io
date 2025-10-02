@@ -11,7 +11,7 @@
 
     <!-- Minimal CSS to handle all hover reveals -->
     <style>
-      .one {
+      /* .one {
         position: relative;
         width: 100%;
         aspect-ratio: 16 / 9;   /* fixed box: both image + video obey this */
@@ -43,7 +43,49 @@
       
       .one:hover .two {
         opacity: 1;
-      }
+      } */
+
+
+/* The image defines the size; both layers sit in the same grid cell */
+.one {
+  display: grid;
+  width: 100%;
+  line-height: 0;       /* remove inline gaps */
+  position: relative;   /* keep your existing positioning if needed */
+}
+
+/* Image = base layer; it sets the height */
+.one > img {
+  grid-area: 1 / 1;     /* same cell as the overlay */
+  width: 100%;
+  height: auto;         /* natural aspect, no distortion */
+  display: block;
+  z-index: 1;
+}
+
+/* Overlay exactly on top of the image */
+.two {
+  grid-area: 1 / 1;     /* identical position/size as the image */
+  display: grid;        /* for centering the video */
+  place-items: center;  /* same center point */
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Video centered, no distortion; fills as much as possible */
+.two video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;   /* no crop, no stretch */
+  background: transparent;
+  display: block;
+}
+
+.one:hover .two { opacity: 1; }
+
+      
 
     </style>
 
