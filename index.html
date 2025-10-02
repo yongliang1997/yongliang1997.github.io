@@ -14,28 +14,35 @@
       .one {
         position: relative;
         width: 100%;
+        overflow: hidden;
       }
       
+      /* image stays natural size but defines the container height */
       .one > img {
         display: block;
         width: 100%;
         height: auto;
       }
       
+      /* overlay box matches the image area */
       .two {
         position: absolute;
         inset: 0;
         opacity: 0;
         transition: opacity .25s ease-in-out;
         pointer-events: none;
+        display: flex;              /* enable centering */
+        align-items: center;        /* vertical center */
+        justify-content: center;    /* horizontal center */
       }
       
+      /* video is centered within the overlay */
       .two video {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;    /* keeps full video visible */
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;   /* no cropping */
+        background: transparent;
         display: block;
-        background: transparent; /* remove black letterbox, make it transparent */
       }
       
       .one:hover .two {
@@ -43,6 +50,7 @@
       }
       
       table { border-collapse: separate; }
+
 
     </style>
 
