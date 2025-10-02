@@ -14,39 +14,34 @@
       .one {
         position: relative;
         width: 100%;
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 16 / 9;   /* or whatever ratio fits your media */
         overflow: hidden;
         line-height: 0;
       }
       
-      /* both layers share the same box & centering */
+      /* Apply the same rules to both */
       .one > img,
       .two video {
         position: absolute;
         inset: 0;
         width: 100%;
         height: 100%;
-        object-fit: contain;    /* no distortion, transparent padding if needed */
-        object-position: center;
+        object-fit: contain;     /* both centered with letterboxing */
+        object-position: center; /* vertical + horizontal centering */
         display: block;
         background: transparent;
       }
       
-      /* overlay sits ABOVE the image */
       .two {
         position: absolute;
         inset: 0;
         opacity: 0;
         transition: opacity .25s ease-in-out;
         pointer-events: none;
-        z-index: 2;             /* <-- key line */
+        z-index: 2;
       }
       
-      /* (optional) make the image explicitly below */
-      .one > img { z-index: 1; }
-      
       .one:hover .two { opacity: 1; }
-
 
     </style>
 
